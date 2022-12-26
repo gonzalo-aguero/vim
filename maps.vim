@@ -40,15 +40,17 @@ nnoremap <C-j> 10<C-e>
 nnoremap <C-k> 10<C-y>
 nmap <Leader>s <Plug>(easymotion-s2)
 
-" run current file (.js)
-nnoremap <Leader>x :!node %<cr>
+" run current file
+nnoremap <space>node :!node %<cr>
+nnoremap <space>py :!python3 %<cr>
+nnoremap <space>cp :!g++ % -o %.bin && ./%.bin && rm ./%.bin<cr>
 
 " use <c-space> to trigger completion
-"if &filetype == "javascript" || &filetype == "python"
-"	inoremap <c-space> <C-x><C-u>
-"else
+if &filetype == "javascript" || &filetype == "python"
+	inoremap <c-space> <C-x><C-u>
+else
 	inoremap <silent><expr> <c-space> coc#refresh()
-"endif
+endif
 
 nnoremap <C-t> :terminal<CR>
 

@@ -1,13 +1,15 @@
+set nocompatible
+
 call plug#begin()
 
 " syntax
 Plug 'sheerun/vim-polyglot'
 
-" status bar
+"" status bar
 Plug 'maximbaz/lightline-ale'
 Plug 'itchyny/lightline.vim'
 
-" Themes
+"" Themes
 Plug 'morhetz/gruvbox'
 Plug 'shinchu/lightline-gruvbox.vim'
 
