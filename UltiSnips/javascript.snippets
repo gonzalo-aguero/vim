@@ -1,13 +1,13 @@
 snippet clg "console.log()" b
-console.log(${1:'$2', $3})
+console.log(${1:'$2', $3});
 endsnippet
 
 snippet imp "import from ''" b
-import ${2:{ $3 }} from '$1'
+import ${2:{ $3 }} from '$1;
 endsnippet
 
 snippet ed "import from ''" b
-export default $1
+export default $1;
 endsnippet
 
 snippet fn "() => {}" i
@@ -19,41 +19,41 @@ endsnippet
 snippet afn "() => {}" i
 ${2:($3)} => ${4:{
   $5
-}}
+}};
 endsnippet
 
 snippet cf "() {}" b
 $1 ($2) {
   $3
-}
+};
 endsnippet
 
 snippet it "it('', () => {})" b
 it('$1', () => {
   $2
-})
+});
 endsnippet
 
 snippet desc "describe('', () => {})" b
 describe('$1', () => {
   $2
-})
+});
 endsnippet
 
 snippet co "const = " b
 const ${1:{ $2 }} = ${3:{
   $4
-}}
+}};
 endsnippet
 
 snippet arr "= []" b
 const $1 = [
   $2
-]
+];
 endsnippet
 
 snippet des "const {} =" b
-const { $1 } = $2
+const { $1 } = $2;
 endsnippet
 
 snippet rfc "React function component" b
@@ -78,9 +78,9 @@ const $1 = ${2:($3)} => {
       $5
     </$4>
   )
-}
+};
 
-export default $1
+export default $1;
 endsnippet
 
 snippet rcc "React class component" b

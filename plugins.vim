@@ -1,5 +1,3 @@
-set nocompatible
-
 call plug#begin()
 
 " syntax
@@ -13,7 +11,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'morhetz/gruvbox'
 Plug 'shinchu/lightline-gruvbox.vim'
 
-" Tree Ctrl+n
+" Tree Ctrl+b
 Plug 'scrooloose/nerdtree'
 
 " typing
@@ -28,6 +26,7 @@ Plug 'christoomey/vim-tmux-navigator'
 " autocomplete
 Plug 'sirver/ultisnips' "snippets creator
 Plug 'neoclide/coc.nvim', {'branch': 'release'} "Intelligence
+Plug 'valloric/youcompleteme'
 
 " IDE
 Plug 'editorconfig/editorconfig-vim'

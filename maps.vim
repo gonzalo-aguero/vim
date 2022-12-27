@@ -6,7 +6,7 @@ nnoremap <Leader>< 10<C-w><
 nnoremap <space>w :w<CR>
 nnoremap <space>s :source %<CR>
 nnoremap <space>q :q<CR>
-nnoremap <space>Q :q!<CR>
+nnoremap <space><C-c> :q!<CR>
 
 " shorter commands
 cnoreabbrev tree NERDTreeToggle
@@ -46,11 +46,18 @@ nnoremap <space>py :!python3 %<cr>
 nnoremap <space>cp :!g++ % -o %.bin && ./%.bin && rm ./%.bin<cr>
 
 " use <c-space> to trigger completion
-if &filetype == "javascript" || &filetype == "python"
-	inoremap <c-space> <C-x><C-u>
-else
-	inoremap <silent><expr> <c-space> coc#refresh()
-endif
+"if &filetype == "javascript" || &filetype == "python"
+"	inoremap <c-space> <C-x><C-u>
+"else
+	"inoremap <silent><expr> <c-space> coc#refresh()
+"endif
+" Make <CR> to accept selected completion item or notify coc.nvim to format
+" <C-g>u breaks current undo, please make your own choice
+"inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
+"                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
 
 nnoremap <C-t> :terminal<CR>
 
