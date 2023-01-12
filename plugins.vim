@@ -25,8 +25,7 @@ Plug 'christoomey/vim-tmux-navigator'
 
 " autocomplete
 Plug 'sirver/ultisnips' "snippets creator
-Plug 'neoclide/coc.nvim', {'branch': 'release'} "Intelligence
-Plug 'valloric/youcompleteme'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " IDE
 Plug 'editorconfig/editorconfig-vim'
