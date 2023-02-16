@@ -13,6 +13,7 @@ cnoreabbrev tree NERDTreeToggle
 
 " plugs shortcuts
 nnoremap  <C-b> :NERDTreeToggle<CR>
+nnoremap <C-r> :NERDTreeRefreshRoot<CR>
 " Ctrl + 7 to toggle comment/uncomment
 map <C-_> <Plug>NERDCommenterToggle
 map <space>p :Files<CR>
@@ -28,10 +29,6 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
-" tabs navigator
-map <space>h :tabprevious<cr>
-map <space>l :tabnext<cr>
-
 " buffers
 map <space>buf :Buffers<cr>
 
@@ -44,8 +41,12 @@ nmap <Leader>s <Plug>(easymotion-s2)
 nnoremap <space>node :!node %<cr>
 nnoremap <space>py :!python3 %<cr>
 nnoremap <space>cp :!g++ % -o %.bin && ./%.bin && rm ./%.bin<cr>
+" static files live server
+cnoreabbrev liveserver terminal /home/gonzalo90fa/node_modules/live-server/live-server.js
 
-" use <c-space> to trigger completion
+
+
+"use <c-space> to trigger completion
 "if &filetype == "javascript" || &filetype == "python"
 "	inoremap <c-space> <C-x><C-u>
 "else
