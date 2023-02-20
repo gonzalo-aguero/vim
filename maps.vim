@@ -43,7 +43,8 @@ nnoremap <space>py :!python3 %<cr>
 nnoremap <space>cp :!g++ % -o %.bin && ./%.bin && rm ./%.bin<cr>
 " static files live server
 cnoreabbrev liveserver terminal /home/gonzalo90fa/node_modules/live-server/live-server.js
-
+" Example: ./program.sh ./program /program.bin
+cnoreabbrev run terminal ./%
 
 
 "use <c-space> to trigger completion
