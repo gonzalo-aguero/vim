@@ -4,18 +4,13 @@ int main(int argc, char* argv[]){
 	return 0;
 }
 endsnippet
-snippet rcc "React class component" b
-import { Component } from 'react'
-
-class $1 extends Component {
-  render() {
-    return (
-      <div>
-        ${2:// here...}
-      </div>
-    )
-  }
+snippet for "For bucle" b
+for(size_t $1 = 0; $1 < ${3:array size}; $1++){
+	${4://code here}
 }
-
-export default $1
+endsnippet
+snippet stru "struct {};" b
+struct ${1:structureName}{
+	${2:// Structure fields}
+};
 endsnippet

@@ -8,9 +8,6 @@ nnoremap <space>s :source %<CR>
 nnoremap <space>q :q<CR>
 nnoremap <space><C-c> :q!<CR>
 
-" shorter commands
-cnoreabbrev tree NERDTreeToggle
-
 " plugs shortcuts
 nnoremap  <C-b> :NERDTreeToggle<CR>
 nnoremap <C-r> :NERDTreeRefreshRoot<CR>
