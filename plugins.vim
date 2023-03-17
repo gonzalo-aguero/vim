@@ -38,4 +38,6 @@ Plug 'preservim/nerdcommenter'
 
 Plug 'tpope/vim-repeat' "repeat no vim native function
 
+Plug 'mattn/emmet-vim'
+
 call plug#end()

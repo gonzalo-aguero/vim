@@ -40,6 +40,10 @@ highlight Normal ctermbg=NONE
 set laststatus=2
 set noshowmode
 set termguicolors
+"autocmd VimEnter * hi Normal ctermbg=NONE guibg=NONE
+hi! Normal guibg=NONE ctermbg=NONE
+
+
 
 "au BufNewFile,BufRead *.html set filetype=htmldjango
 "lua require'colorizer'.setup()
@@ -62,7 +66,6 @@ set cursorline
 " Uncomment the following to have Vim load indentation rules and plugins
 " according to the detected filetype.
 filetype plugin indent on
-set encoding=utf-8
 
 " The following are commented out as they cause vim to behave a lot
 " differently from regular Vi. They are highly recommended though.
