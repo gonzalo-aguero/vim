@@ -10,9 +10,9 @@ nnoremap <space><C-c> :q!<CR>
 
 " plugs shortcuts
 nnoremap  <C-b> :NERDTreeToggle<CR>
-nnoremap <C-r> :NERDTreeRefreshRoot<CR>
 " Ctrl + 7 to toggle comment/uncomment
 map <C-_> <Plug>NERDCommenterToggle
+cnoreabbrev tree :NERDTreeRefreshRoot
 map <space>p :Files<CR>
 
 " tmux navigator
@@ -25,7 +25,7 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
-
+:
 " buffers
 map <space>buf :Buffers<cr>
 

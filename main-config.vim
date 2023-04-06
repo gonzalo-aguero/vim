@@ -51,7 +51,8 @@ hi! Normal guibg=NONE ctermbg=NONE
 " Uncomment the following to have Vim jump to the last position when
 " reopening a file
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-set clipboard+=unnamedplus
+set clipboard=unnamedplus
+:let @+=42
 
 set encoding=utf-8
 set number
@@ -62,6 +63,7 @@ set tabstop=4
 set shiftwidth=4
 set autoindent
 set cursorline
+set nowrap
 
 " Uncomment the following to have Vim load indentation rules and plugins
 " according to the detected filetype.
