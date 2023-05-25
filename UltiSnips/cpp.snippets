@@ -29,6 +29,12 @@ endsnippet
 snippet debug "cout << ..." b
 if(DEBUG) cout << "${1:valueName}: " << ${2:value} << "\n";
 endsnippet
+snippet ifdebug "if(DEBUG){ ... }" b
+if(DEBUG){ 
+	${1:// Your DEBUG code here...}
+}
+endsnippet
+
 
 snippet cin "cin >> variable;" b
 cin >> ${1:variable};

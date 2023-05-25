@@ -85,3 +85,5 @@ set mouse=a		" Enable mouse usage (all modes)
 "  source /etc/vim/vimrc.local
 "endif
 
+
+set wildmenu
